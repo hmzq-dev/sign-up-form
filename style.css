@@ -1,7 +1,120 @@
+:root {
+    --accent-color: #578232;
+    --left-margin: 50px;
+}
+
+@font-face {
+    font-family: "Queensides";
+    src: url("assets/Queensides.ttf");
+}
+
 body {
     margin: 0;
+    display: flex;
+    height: 100vh;
+    font-family: sans-serif;
 }
 
 * {
     box-sizing: border-box;
+}
+
+.side-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex: 2;
+    padding: 115px 0 0 0;
+    background-image: url("assets/background.jpg");
+    background-size: 100% 100%;
+    color: white;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    padding: 0 20px;
+}
+
+.logo-name {
+    font-size: 3rem;
+    font-family: "Queensides", sans-serif;
+    font-weight: bold;
+}
+
+.background-credit {
+    opacity: 0.8;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(240, 243, 239);
+    flex: 4;
+}
+
+.left-margin {
+    margin-left: var(--left-margin);
+}
+
+.info-container {
+    width: 70%;
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+
+.form-background {
+    background-color: white;
+    box-shadow: 0 5px 10px rgb(186, 186, 186);
+    padding: 10px var(--left-margin);
+    margin-bottom: 20px;
+}
+
+.form-fields-container {
+    display: flex;
+    gap: 50px;
+}
+
+.form-field {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 0.7rem;
+    margin-bottom: 3px;
+}
+
+input {
+    border: 1px solid #E5E7EB;
+    border-radius: 3px;
+    padding: 3px 7px;
+}
+
+input:focus {
+    border: 2px solid #4065cb;
+    outline: none;
+}
+
+button {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 3px;
+    font-weight: bold;
+    box-shadow: 0 3px 10px rgb(186, 186, 186);
+}
+
+a {
+    text-decoration: none;
+    color: var(--accent-color);
+    font-weight: bold;
 }
