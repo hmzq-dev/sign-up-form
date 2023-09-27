@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Sign up Form</title>
         <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
     </head>
 
     <body>
@@ -29,34 +30,34 @@
                         <div class="form-fields-left">
                             <div class="form-field">
                                 <label for="first-name">FIRST NAME</label>
-                                <input type="text" id="first-name">
+                                <input type="text" id="first-name" required minlength="2" maxlength="12">
                             </div>
     
                             <div class="form-field">
                                 <label for="email">EMAIL</label>
-                                <input type="email" id="email">
+                                <input type="email" id="email" required>
                             </div>
     
                             <div class="form-field">
                                 <label for="password">PASSWORD</label>
-                                <input type="password" id="password">
+                                <input type="password" id="password" required>
                             </div>
                         </div>
     
                         <div class="form-fields-right">
                             <div class="form-field">
                                 <label for="last-name">LAST NAME</label>
-                                <input type="text" id="last-name">
+                                <input type="text" id="last-name" required minlength="2" maxlength="12">
                             </div>
     
                             <div class="form-field">
                                 <label for="phone-number">PHONE NUMBER</label>
-                                <input type="tel" id="phone-number">
+                                <input type="tel" id="phone-number" required>
                             </div>
     
                             <div class="form-field">
                                 <label for="confirm-password">CONFIRM PASSWORD</label>
-                                <input type="password" id="confirm-password">                      
+                                <input type="password" id="confirm-password" required>                      
                             </div>
                         </div>
                     </div>                   
