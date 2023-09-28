@@ -30,37 +30,39 @@
                         <div class="form-fields-left">
                             <div class="form-field">
                                 <label for="first-name">FIRST NAME</label>
-                                <input type="text" id="first-name" required minlength="2" maxlength="12">
+                                <input type="text" id="first-name" required minlength="2" maxlength="12" name="first-name">
                             </div>
     
                             <div class="form-field">
                                 <label for="email">EMAIL</label>
-                                <input type="email" id="email" required>
+                                <input type="email" id="email" required name="email">
                             </div>
     
                             <div class="form-field">
                                 <label for="password">PASSWORD</label>
-                                <input type="password" id="password" required>
+                                <input type="password" id="password" required minlength="8" name="password">
                             </div>
                         </div>
     
                         <div class="form-fields-right">
                             <div class="form-field">
                                 <label for="last-name">LAST NAME</label>
-                                <input type="text" id="last-name" required minlength="2" maxlength="12">
+                                <input type="text" id="last-name" required minlength="2" maxlength="12" name="last-name">
                             </div>
     
                             <div class="form-field">
                                 <label for="phone-number">PHONE NUMBER</label>
-                                <input type="tel" id="phone-number" required>
+                                <input type="tel" id="phone-number" required name="phone-number">
                             </div>
     
                             <div class="form-field">
                                 <label for="confirm-password">CONFIRM PASSWORD</label>
-                                <input type="password" id="confirm-password" required>                      
+                                <input type="password" id="confirm-password" required minlength="8" name="confirm-password">                      
                             </div>
                         </div>
-                    </div>                   
+                    </div>   
+                    
+                    <ul class="error-messages"></ul>
                 </div>
 
                 <button type="submit"  class="left-margin">Create Account</button>
